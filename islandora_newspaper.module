@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Islandora newspaper solution pack
+ */
+
+function islandora_newspaper_menu() {
+  $items = array();
+  
+  $items['admin/settings/islandora_book'] = array(
+    'title' => 'Islandora Book Admin',
+    'description' => 'Configuration Islandora Book Module',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('islandora_book_admin_settings'),
+    'access arguments' => array('administer site configuration'),
+    'file' => 'islandora_book.admin.inc',
+    'type' => MENU_NORMAL_ITEM,
+  );
+  
+  return $items;
+}
