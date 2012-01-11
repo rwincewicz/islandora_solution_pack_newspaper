@@ -8,13 +8,13 @@
 function islandora_newspaper_menu() {
   $items = array();
   
-  $items['admin/settings/islandora_book'] = array(
-    'title' => 'Islandora Book Admin',
-    'description' => 'Configuration Islandora Book Module',
+  $items['admin/settings/islandora_newspaper'] = array(
+    'title' => 'Islandora Newspaper Admin',
+    'description' => 'Configuration Islandora Newspaper Module',
     'page callback' => 'drupal_get_form',
-    'page arguments' => array('islandora_book_admin_settings'),
+    'page arguments' => array('islandora_newspaper_admin_settings'),
     'access arguments' => array('administer site configuration'),
-    'file' => 'islandora_book.admin.inc',
+    'file' => 'islandora_newspaper_admin.inc',
     'type' => MENU_NORMAL_ITEM,
   );
   
